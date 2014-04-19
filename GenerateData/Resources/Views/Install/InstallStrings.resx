@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnonymousAccess" xml:space="preserve">
+    <value>Anonymous access</value>
+  </data>
+  <data name="AnonymousUserDefaultMessage" xml:space="preserve">
+    <value>Please login or email someone@yoursite.com to get a user account.</value>
+  </data>
+  <data name="AnonymousUserDesc" xml:space="preserve">
+    <value>Anonymous users can use the script but have limited access: they cannot save, link to their data sets or generate more than 100 rows at a time.</value>
+  </data>
+  <data name="AnonymousUserMessage" xml:space="preserve">
+    <value>Message to display to anonymous users when trying to save:</value>
+  </data>
+  <data name="CheckDatabaseInfo" xml:space="preserve">
+    <value>Check Database Info</value>
+  </data>
+  <data name="CompleteExcl" xml:space="preserve">
+    <value>Complete!</value>
+  </data>
+  <data name="ConfirmFileExists" xml:space="preserve">
+    <value>Confirm File Exists</value>
+  </data>
+  <data name="Countries" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="CreateFileRightarrow" xml:space="preserve">
+    <value>Create File &amp;raquo;</value>
+  </data>
+  <data name="CreateSettingsFile" xml:space="preserve">
+    <value>Create Settings File</value>
+  </data>
+  <data name="DatabaseName" xml:space="preserve">
+    <value>Database Name</value>
+  </data>
+  <data name="DataTypes" xml:space="preserve">
+    <value>Data Types</value>
+  </data>
+  <data name="DefaultLanguage" xml:space="preserve">
+    <value>Default Language</value>
+  </data>
+  <data name="ExportTypes" xml:space="preserve">
+    <value>Export Types</value>
+  </data>
+  <data name="FeatureEnabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="GotoScriptRightarrow" xml:space="preserve">
+    <value>Go to script &amp;raquo;</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Hostname" xml:space="preserve">
+    <value>Host Name</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="Installation" xml:space="preserve">
+    <value>Installation</value>
+  </data>
+  <data name="InstallationCompleteText" xml:space="preserve">
+    <value>The Data Generator has been successfully installed! Click the button below to go to the script.</value>
+  </data>
+  <data name="InstallationFailedCreateSettingsFileMsg" xml:space="preserve">
+    <value>This usually occurs when it fails to have permissions to write to the folder. Please manually create this file and place it in the base folder of the Data Generator. When you have done this, button below to continue installing.</value>
+  </data>
+  <data name="InstallationIntro" xml:space="preserve">
+    <value>Alrighty, let's get this sucker installed. Enter your database information to create your database tables. If you're unsure about any of these fields, click on the Help tab for a little more info.</value>
+  </data>
+  <data name="InstallationPluginIntro" xml:space="preserve">
+    <value>Almost done! Now we're going to install the plugins: these are what make the Data Generator actually &lt;i&gt;useful&lt;/i&gt; - i.e. the type of data you can generate (Data Types), the format of the generated data (Export Types) and all the Country-specific data like regions and cities.</value>
+  </data>
+  <data name="InstallationStep2Intro" xml:space="preserve">
+    <value>So far so good! Now click the button below to create your &lt;b&gt;settings.php&lt;/b&gt; file. This file is stored in the root folder of this application and is the only place (other than the database) that stores custom information about your installation.</value>
+  </data>
+  <data name="InstallationStep3Intro" xml:space="preserve">
+    <value>You have three choices for the way your installation handles user accounts.</value>
+  </data>
+  <data name="InstallPluginsRightarrow" xml:space="preserve">
+    <value>Install Plugins &amp;raquo;</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="MultipleAccounts" xml:space="preserve">
+    <value>Multiple accounts</value>
+  </data>
+  <data name="MysqlPassword" xml:space="preserve">
+    <value>MySQL Password</value>
+  </data>
+  <data name="MysqlUsername" xml:space="preserve">
+    <value>MySQL Username</value>
+  </data>
+  <data name="Plugins" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="SingleAnonymousUserAccount" xml:space="preserve">
+    <value>Single, anonymous user account</value>
+  </data>
+  <data name="SingleUserAccountRequiresLogin" xml:space="preserve">
+    <value>Single user account, requires login</value>
+  </data>
+  <data name="TablePrefix" xml:space="preserve">
+    <value>Table Prefix</value>
+  </data>
+  <data name="UserAccounts" xml:space="preserve">
+    <value>User Accounts</value>
+  </data>
+  <data name="HelpIntro" xml:space="preserve">
+    <value>The installation script does two things for you. One, it automatically generates a &lt;b&gt;settings.php&lt;/b&gt; file which contains your unique database connection info, so that it knows how to connect to the database whenever you visit the script. Two, it populates the database with various information that it needs: things like general settings, user accounts and raw data like people's names, country and city names.</value>
+  </data>
+  <data name="HelpPrereqInfo" xml:space="preserve">
+    <value>Just like virtually every other PHP/MySQL script out there, you need to have already created a database before running the installation script. &lt;i&gt;The installation script doesn't create the database, it just tries to connect to it to create the tables.&lt;/i&gt; If you're not sure how to create a database within your environment, you'll either need to contact your hosting provider, or spend some time researching it on Google. Sorry!</value>
+  </data>
+  <data name="HelpPrerequisites" xml:space="preserve">
+    <value>Pre-requisites</value>
+  </data>
+  <data name="InstallUserDocLink" xml:space="preserve">
+    <value>For more detailed information about the installation process, check out our &lt;a href="http://benkeen.github.io/generatedata/install.html" target="_blank"&gt;user documentation&lt;/a&gt;.</value>
+  </data>
+  <data name="StillStuck" xml:space="preserve">
+    <value>Still stuck?</value>
+  </data>
+</root>

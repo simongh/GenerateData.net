@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPara1" xml:space="preserve">
+    <value>Sometimes you need fake data for things like testing software, populating databases and creating realistic-looking mockups. For text, we have &lt;i&gt;lorem ipsum&lt;/i&gt;; but for everything else...? This tool was written to provide a quick and simple way to let you generate large volumes of custom data in whatever format you require.</value>
+  </data>
+  <data name="AboutPara2" xml:space="preserve">
+    <value>The &lt;b&gt;Generate&lt;/b&gt; page contains the entire script: just fill in the various fields in the page to construct the data set you're interested in, then click the Generate button. And hey presto! Easy, huh?</value>
+  </data>
+  <data name="AboutPara3" xml:space="preserve">
+    <value>The out-the-box script contains the sort of functionality you generally need. But nothing's ever complete - maybe you need to generate random esoteric math equations, pull random tweets or display random images from Flickr with the word "Red-backed="" vole=""" in the title. Who knows. Everyone's use-case is different.</value>
+  </data>
+  <data name="AboutPara4" xml:space="preserve">
+    <value>With this in mind, the new version of the script (3.0.0+) was designed to be fully extensible: developers can write their own Data Types to generate new types of random data, and even customize the Export Types - i.e. the format in which the data is output. For people interested in generating more accurate localized geographical data, they can also add new Country plugins that supply region names (states, provinces, territories etc), city names and postal/zip code formats for their country of choice.</value>
+  </data>
+  <data name="AboutPara5" xml:space="preserve">
+    <value>For more information on how to extend it, visit the &lt;a href="docs/"&gt;developer documentation&lt;/a&gt;.</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>What &lt;i&gt;is&lt;/i&gt; this thing?</value>
+  </data>
+  <data name="AccountCreated" xml:space="preserve">
+    <value>Account Created</value>
+  </data>
+  <data name="AccountCreatedMsg" xml:space="preserve">
+    <value>An account has been created for you.</value>
+  </data>
+  <data name="AccountInfo" xml:space="preserve">
+    <value>Account Info</value>
+  </data>
+  <data name="AccountSettings" xml:space="preserve">
+    <value>Account Settings</value>
+  </data>
+  <data name="AccountType" xml:space="preserve">
+    <value>Account type</value>
+  </data>
+  <data name="AccountUpdated" xml:space="preserve">
+    <value>Your account has been updated.</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="AdminAccount" xml:space="preserve">
+    <value>Admin account</value>
+  </data>
+  <data name="AFewLinks" xml:space="preserve">
+    <value>A few links</value>
+  </data>
+  <data name="Africa" xml:space="preserve">
+    <value>Africa</value>
+  </data>
+  <data name="AllCountries" xml:space="preserve">
+    <value>All countries</value>
+  </data>
+  <data name="AllDataTypePlugins" xml:space="preserve">
+    <value>All Data Type plugins</value>
+  </data>
+  <data name="AllExportTypePlugins" xml:space="preserve">
+    <value>All Export Type plugins</value>
+  </data>
+  <data name="AnonymousAdminAccount" xml:space="preserve">
+    <value>Anonymous admin account</value>
+  </data>
+  <data name="Asia" xml:space="preserve">
+    <value>Asia</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="CannotChangeNumRows" xml:space="preserve">
+    <value>Sorry, you're not allowed to change the number of generated rows.</value>
+  </data>
+  <data name="CentralAmerica" xml:space="preserve">
+    <value>Central America</value>
+  </data>
+  <data name="ClearThePage" xml:space="preserve">
+    <value>Clear the Page</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ConfirmDeleteForm" xml:space="preserve">
+    <value>Are you sure you want to delete this form?</value>
+  </data>
+  <data name="ConfirmDeleteUserAccount" xml:space="preserve">
+    <value>Are you sure you want to delete this user account?</value>
+  </data>
+  <data name="ConfirmEmptyForm" xml:space="preserve">
+    <value>Are you sure you want to clear the page?</value>
+  </data>
+  <data name="CountrySpecificData" xml:space="preserve">
+    <value>Country-Specific Data</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>Create Account</value>
+  </data>
+  <data name="CreateAccountRightarrow" xml:space="preserve">
+    <value>Create Account &amp;raquo;</value>
+  </data>
+  <data name="CreditCardData" xml:space="preserve">
+    <value>Credit Card Data</value>
+  </data>
+  <data name="DatabaseInfo" xml:space="preserve">
+    <value>Database Info</value>
+  </data>
+  <data name="DataCreated" xml:space="preserve">
+    <value>Data Created</value>
+  </data>
+  <data name="DataFormat" xml:space="preserve">
+    <value>Data Format</value>
+  </data>
+  <data name="DataSet" xml:space="preserve">
+    <value>Data Set</value>
+  </data>
+  <data name="DataSetHelp" xml:space="preserve">
+    <value>This is where you define exactly what kind of data you want to generate. Try filling in a row or two and click the Generate button. You'll get the hang of it pretty fast.</value>
+  </data>
+  <data name="DataSetName" xml:space="preserve">
+    <value>Data Set Name</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="DateAccountCreated" xml:space="preserve">
+    <value>Date account created</value>
+  </data>
+  <data name="DateCreated" xml:space="preserve">
+    <value>Date Created</value>
+  </data>
+  <data name="DefaultSaveFormEmpty" xml:space="preserve">
+    <value>Enter form name here</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Delete1DataSet" xml:space="preserve">
+    <value>Delete 1 Data Set</value>
+  </data>
+  <data name="DeleteAccount" xml:space="preserve">
+    <value>Delete Account</value>
+  </data>
+  <data name="DeleteNDataSets" xml:space="preserve">
+    <value>Delete %1 Data Sets</value>
+  </data>
+  <data name="DelUc" xml:space="preserve">
+    <value>DEL</value>
+  </data>
+  <data name="Developer" xml:space="preserve">
+    <value>Developer</value>
+  </data>
+  <data name="DeveloperDoc" xml:space="preserve">
+    <value>Developer doc</value>
+  </data>
+  <data name="DeveloperIntro" xml:space="preserve">
+    <value>The following sections lets you fine-tune what you see in your javascript console for development purposes.</value>
+  </data>
+  <data name="Donate" xml:space="preserve">
+    <value>Donate!</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EmailC" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="EmailNotSent" xml:space="preserve">
+    <value>We were unable to send the email notification.</value>
+  </data>
+  <data name="EmailUserLoginInfo" xml:space="preserve">
+    <value>Email the user their login information</value>
+  </data>
+  <data name="EmptyForm" xml:space="preserve">
+    <value>Empty Form</value>
+  </data>
+  <data name="EnterUserAccountDetails" xml:space="preserve">
+    <value>Please enter your user account details below.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>error</value>
+  </data>
+  <data name="Europe" xml:space="preserve">
+    <value>Europe</value>
+  </data>
+  <data name="Examples" xml:space="preserve">
+    <value>Examples</value>
+  </data>
+  <data name="ExportTypesHelp" xml:space="preserve">
+    <value>This section lets you control the format of your generated data. Each format may provide different options to let you tailor the output to exactly what you want.</value>
+  </data>
+  <data name="ExportTypeValidateError" xml:space="preserve">
+    <value>Ack! There was an error in the Export Type's validate() function. Sorry, we can't proceed - call a developer!</value>
+  </data>
+  <data name="ExtendId" xml:space="preserve">
+    <value>Extend it</value>
+  </data>
+  <data name="ExtendIt" xml:space="preserve">
+    <value>Extend it</value>
+  </data>
+  <data name="FatalError" xml:space="preserve">
+    <value>A fatal error occurred.</value>
+  </data>
+  <data name="ForkOnGithub" xml:space="preserve">
+    <value>Fork the code on github</value>
+  </data>
+  <data name="ForkThisProjectOnGithub" xml:space="preserve">
+    <value>Fork this project on Github</value>
+  </data>
+  <data name="FormDeleted" xml:space="preserve">
+    <value>The form has been deleted.</value>
+  </data>
+  <data name="FormExistsOverwriteConfirmation" xml:space="preserve">
+    <value>This form already exists. Do you want to overwrite it?</value>
+  </data>
+  <data name="FormNotDeleted" xml:space="preserve">
+    <value>Sorry, we couldn&amp;#39;t delete this form. Re-log in and try again.</value>
+  </data>
+  <data name="FormSaved" xml:space="preserve">
+    <value>Your form has been saved.</value>
+  </data>
+  <data name="Forums" xml:space="preserve">
+    <value>Forums</value>
+  </data>
+  <data name="GeneratedXOfYResults" xml:space="preserve">
+    <value>Generated &lt;span id="gdGenerateCount"&gt;&lt;/span&gt; of &lt;span id="gdGenerateTotal"&gt;&lt;/span&gt; results</value>
+  </data>
+  <data name="GenerateInPage" xml:space="preserve">
+    <value>Generate in-page</value>
+  </data>
+  <data name="Generator" xml:space="preserve">
+    <value>Generator</value>
+  </data>
+  <data name="Geo" xml:space="preserve">
+    <value>Geo</value>
+  </data>
+  <data name="GotoWebsite" xml:space="preserve">
+    <value>Go to the website</value>
+  </data>
+  <data name="HideDataFormatOptions" xml:space="preserve">
+    <value>hide data format options</value>
+  </data>
+  <data name="HideError" xml:space="preserve">
+    <value>Hide error</value>
+  </data>
+  <data name="HostnameDesc" xml:space="preserve">
+    <value>The name of your database connection. Often it's just &lt;i&gt;localhost&lt;/i&gt;, but sometimes it's something like &lt;i&gt;mysql.yoursite.com&lt;/i&gt;.</value>
+  </data>
+  <data name="HumanData" xml:space="preserve">
+    <value>Human Data</value>
+  </data>
+  <data name="InfoAndStats" xml:space="preserve">
+    <value>Info and Stats</value>
+  </data>
+  <data name="InstallationError" xml:space="preserve">
+    <value>Installation error</value>
+  </data>
+  <data name="InstallInvalidDbInfo" xml:space="preserve">
+    <value>We were unable to connect to the database using the information you supplied. The error message the database returned is: &lt;i&gt;{\$db_connectionError}&lt;/i&gt;</value>
+  </data>
+  <data name="InstallNoDbConnection" xml:space="preserve">
+    <value>Please check your database name and login information. Although we were able to connect to the database host, we could not connect to the database. The error message the database returned is: &lt;i&gt;{\$db_select_error}&lt;/i&gt;</value>
+  </data>
+  <data name="InvalidAccountId" xml:space="preserve">
+    <value>The Account ID is not valid.</value>
+  </data>
+  <data name="InvalidCustomXml" xml:space="preserve">
+    <value>There&amp;#39;s a problem with the custom XML markup you entered. Please consult the user documentation for more information.</value>
+  </data>
+  <data name="InvalidNumResults" xml:space="preserve">
+    <value>Please enter a valid number of results.</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Sorry, that password is not correct. Please try again.</value>
+  </data>
+  <data name="InvalidTableNames" xml:space="preserve">
+    <value>Database column names can only alphanumeric characters and must begin with a letter. Please fix the following rows:</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LastEdited" xml:space="preserve">
+    <value>last edited</value>
+  </data>
+  <data name="LastLoggedIn" xml:space="preserve">
+    <value>Last Logged In</value>
+  </data>
+  <data name="LastModified" xml:space="preserve">
+    <value>Last Modified</value>
+  </data>
+  <data name="LastSaved" xml:space="preserve">
+    <value>last saved</value>
+  </data>
+  <data name="LatestProjectNews" xml:space="preserve">
+    <value>Latest project news</value>
+  </data>
+  <data name="LimitPubSubConsoleMessages" xml:space="preserve">
+    <value>Limit pub/sub console messages to specific modules:</value>
+  </data>
+  <data name="LinkToDataSet" xml:space="preserve">
+    <value>Link to Data Set</value>
+  </data>
+  <data name="LinkToThisDataSet" xml:space="preserve">
+    <value>Link to this Data Set</value>
+  </data>
+  <data name="ListConsoleWarnEvents" xml:space="preserve">
+    <value>List console.warn() events</value>
+  </data>
+  <data name="ListCoreEvents" xml:space="preserve">
+    <value>List &lt;b&gt;core&lt;/b&gt; events</value>
+  </data>
+  <data name="ListModulePublishEvents" xml:space="preserve">
+    <value>List module &lt;b&gt;publish&lt;/b&gt; events</value>
+  </data>
+  <data name="ListModuleSubscribeEvents" xml:space="preserve">
+    <value>List module &lt;b&gt;subscribe&lt;/b&gt; events</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="LoadUc" xml:space="preserve">
+    <value>LOAD</value>
+  </data>
+  <data name="LoginUrlC" xml:space="preserve">
+    <value>Login URL:</value>
+  </data>
+  <data name="MakeDataSetPublicAgreement" xml:space="preserve">
+    <value>I understand that to share this Data Set, I need to make it public.</value>
+  </data>
+  <data name="Math" xml:space="preserve">
+    <value>Math</value>
+  </data>
+  <data name="Misc" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="MissingNodeName" xml:space="preserve">
+    <value>The following rows have missing node names:</value>
+  </data>
+  <data name="MissingTableName" xml:space="preserve">
+    <value>The following rows have missing table column names:</value>
+  </data>
+  <data name="NewWindowOrTab" xml:space="preserve">
+    <value>New window/tab</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoAccountFound" xml:space="preserve">
+    <value>Sorry, that account wasn't found.</value>
+  </data>
+  <data name="NoAdditionalExportTypeSettings" xml:space="preserve">
+    <value>No additional export type settings.</value>
+  </data>
+  <data name="NoCsvDelimiter" xml:space="preserve">
+    <value>Please enter the CSV delimiter.</value>
+  </data>
+  <data name="NoData" xml:space="preserve">
+    <value>Oops, nothing to generate! Enter some data to be generated.</value>
+  </data>
+  <data name="NoDataTypesFound" xml:space="preserve">
+    <value>No Data Types found</value>
+  </data>
+  <data name="NoExamplesAvailable" xml:space="preserve">
+    <value>No examples available.</value>
+  </data>
+  <data name="NoExportTypesFound" xml:space="preserve">
+    <value>No Export Types found</value>
+  </data>
+  <data name="NoFormName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NoJsBlurb" xml:space="preserve">
+    <value>You know this is, like, the 21st century? The Data Generator script relies heavily on javascript - things just plain won't work without it. You&amp;#39;ll need to enable it in your browser then refresh this page.</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="NoNumRows" xml:space="preserve">
+    <value>Please enter the number of rows to add.</value>
+  </data>
+  <data name="NoOptionsAvailable" xml:space="preserve">
+    <value>No options available.</value>
+  </data>
+  <data name="NorthAmerica" xml:space="preserve">
+    <value>North America</value>
+  </data>
+  <data name="NoSavedDataSets" xml:space="preserve">
+    <value>You don't have any saved data sets.</value>
+  </data>
+  <data name="NotifySettingsUpdated" xml:space="preserve">
+    <value>Your settings have been updated.</value>
+  </data>
+  <data name="NotSaved" xml:space="preserve">
+    <value>not saved</value>
+  </data>
+  <data name="NoUserAccountsDefined" xml:space="preserve">
+    <value>No user accounts defined.</value>
+  </data>
+  <data name="Numeric" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="NumRecordsGenerated" xml:space="preserve">
+    <value>Generated</value>
+  </data>
+  <data name="NumResults" xml:space="preserve">
+    <value>Num Results</value>
+  </data>
+  <data name="NumRowsTooLarge" xml:space="preserve">
+    <value>Sorry, you're limited to generating &lt;b&gt;%1&lt;/b&gt; rows at a time. Click generate to continue.</value>
+  </data>
+  <data name="NumSavedDataSets" xml:space="preserve">
+    <value>Num Saved Data Sets</value>
+  </data>
+  <data name="Oceania" xml:space="preserve">
+    <value>Oceania</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="PasswordC" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="PasswordChangeNote" xml:space="preserve">
+    <value>You only need to fill the password fields in if you want to change it.</value>
+  </data>
+  <data name="PasswordResetComplete" xml:space="preserve">
+    <value>Your password has been reset and you have been emailed the new password.</value>
+  </data>
+  <data name="PasswordResetEmailContent1" xml:space="preserve">
+    <value>Your password has been reset. You may use the following password to log in: %1</value>
+  </data>
+  <data name="PasswordResetEmailContent2" xml:space="preserve">
+    <value>Please change it once you've logged in.</value>
+  </data>
+  <data name="PleaseConfirm" xml:space="preserve">
+    <value>Please confirm</value>
+  </data>
+  <data name="PleaseEnterAll" xml:space="preserve">
+    <value>Please enter all</value>
+  </data>
+  <data name="PleaseEnterDataSetName" xml:space="preserve">
+    <value>Please enter the name of the new Data Set.</value>
+  </data>
+  <data name="PleaseFixErrors" xml:space="preserve">
+    <value>Please fix the following errors and resubmit:</value>
+  </data>
+  <data name="PleaseSelect" xml:space="preserve">
+    <value>Please Select</value>
+  </data>
+  <data name="PluginsIntro" xml:space="preserve">
+    <value>Any time you add or remove a plugin, you need to reset the plugins. This will update the database and ensure you can access the plugins you require.</value>
+  </data>
+  <data name="PromptToDownload" xml:space="preserve">
+    <value>Prompt to download</value>
+  </data>
+  <data name="PublicQ" xml:space="preserve">
+    <value>Public?</value>
+  </data>
+  <data name="ReadDeveloperDoc" xml:space="preserve">
+    <value>Read the developer documentation</value>
+  </data>
+  <data name="ReenterPassword" xml:space="preserve">
+    <value>Re-enter password</value>
+  </data>
+  <data name="RefreshPage" xml:space="preserve">
+    <value>Refresh Page</value>
+  </data>
+  <data name="Regenerate" xml:space="preserve">
+    <value>Regenerate</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="ResetPlugins" xml:space="preserve">
+    <value>Reset plugins</value>
+  </data>
+  <data name="ResetPluginsWithBundling" xml:space="preserve">
+    <value>&lt;b&gt;You have bundling/minification enabled&lt;/b&gt;. After clicking this button you will need to run &lt;i&gt;grunt&lt;/i&gt; to recreate the bundles. For more information &lt;a href="http://benkeen.github.io/generatedata/developer.html#bundling" target="_blank"&gt;read this documentation page&lt;/a&gt;. If you have any problems, you may want to turn off bundling.</value>
+  </data>
+  <data name="ResultType" xml:space="preserve">
+    <value>Result Type</value>
+  </data>
+  <data name="RowLabel" xml:space="preserve">
+    <value>Column Title</value>
+  </data>
+  <data name="RowLabelPlural" xml:space="preserve">
+    <value>Column Titles</value>
+  </data>
+  <data name="Rows" xml:space="preserve">
+    <value>rows</value>
+  </data>
+  <data name="RowsGenerated" xml:space="preserve">
+    <value>Rows Generated</value>
+  </data>
+  <data name="RowSp" xml:space="preserve">
+    <value>Row(s)</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveDataSetToLink" xml:space="preserve">
+    <value>De-&lt;i&gt;nied&lt;/i&gt;. In order to share this Data Set with other people, you need to save it first.</value>
+  </data>
+  <data name="SaveUc" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="ScriptThinking" xml:space="preserve">
+    <value>Oops, hold on for a second. The script is thinking.</value>
+  </data>
+  <data name="SeeHelpDialog" xml:space="preserve">
+    <value>&amp;nbsp;See help dialog.</value>
+  </data>
+  <data name="SelectDataType" xml:space="preserve">
+    <value>Select Data Type</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="SettingsFileExists" xml:space="preserve">
+    <value>The settings file already exists. For new installations, the settings.php shouldn't exist. Either delete it and continue the installation script or try loading the script again with the existing settings file values.</value>
+  </data>
+  <data name="ShowDataFormatOptions" xml:space="preserve">
+    <value>show data format options</value>
+  </data>
+  <data name="SouthAmerica" xml:space="preserve">
+    <value>South America</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>success</value>
+  </data>
+  <data name="TableColumn" xml:space="preserve">
+    <value>Table Column</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="TipCountryData" xml:space="preserve">
+    <value>This section lets you control what country-specific data should be included in your generated data sets. The values you select here affect certain Data Types that you may select, such as &lt;i&gt;Region&lt;/i&gt;, &lt;i&gt;Postal/Zip&lt;/i&gt; and &lt;i&gt;Country&lt;/i&gt;.&lt;/p&gt;&lt;p&gt;
+		To give you a better idea of what this means, try selecting the &lt;i&gt;Region&lt;/i&gt; Data Type for one of your rows in the Data Set section, then add / remove countries from the Country-Specific Data section. You'll see that the row options that appear are directly affected by the countries you have selected: you can only ever generate a subset of the countries selected.</value>
+  </data>
+  <data name="TotalRowsGenerated" xml:space="preserve">
+    <value>Total rows generated</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateAccount" xml:space="preserve">
+    <value>Update Account</value>
+  </data>
+  <data name="UpdateSettings" xml:space="preserve">
+    <value>Update Settings</value>
+  </data>
+  <data name="UseCustomXmlFormat" xml:space="preserve">
+    <value>Use custom XML format</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserAccount" xml:space="preserve">
+    <value>User Account</value>
+  </data>
+  <data name="UserAccountSectionIntro" xml:space="preserve">
+    <value>This section lets you create any number of users accounts to allow people access to the script. Only you are able to create or delete accounts.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>Sorry, we were unable to identify you.</value>
+  </data>
+  <data name="ValidationAccountAlreadyExists" xml:space="preserve">
+    <value>Sorry, an account with that email address already exists.</value>
+  </data>
+  <data name="ValidationInvalidChars" xml:space="preserve">
+    <value>Alphanumeric and underscore characters only, please.</value>
+  </data>
+  <data name="ValidationInvalidEmail" xml:space="preserve">
+    <value>Please enter a valid email address.</value>
+  </data>
+  <data name="ValidationInvalidPermissions" xml:space="preserve">
+    <value>You don't have permissions to do this.</value>
+  </data>
+  <data name="ValidationNoDbHostname" xml:space="preserve">
+    <value>Please enter your database hostname.</value>
+  </data>
+  <data name="ValidationNoDbName" xml:space="preserve">
+    <value>Please enter your database name.</value>
+  </data>
+  <data name="ValidationNoEmail" xml:space="preserve">
+    <value>Please enter your email address.</value>
+  </data>
+  <data name="ValidationNoFirstName" xml:space="preserve">
+    <value>Please enter your first name.</value>
+  </data>
+  <data name="ValidationNoLastName" xml:space="preserve">
+    <value>Please enter your last name.</value>
+  </data>
+  <data name="ValidationNoMysqlUsername" xml:space="preserve">
+    <value>Please enter your MySQL username.</value>
+  </data>
+  <data name="ValidationNoPassword" xml:space="preserve">
+    <value>Please enter your password.</value>
+  </data>
+  <data name="ValidationNotLoggedIn" xml:space="preserve">
+    <value>You don't appear to be logged in. Please try logging in again.</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="YourDataSetNameHere" xml:space="preserve">
+    <value>Your data set name here...</value>
+  </data>
+  <data name="YourDataSets" xml:space="preserve">
+    <value>Your Data Sets</value>
+  </data>
+  <data name="ZipQ" xml:space="preserve">
+    <value>Zip?</value>
+  </data>
+  <data name="InstallationFailedCreateSettingsFile" xml:space="preserve">
+    <value>The script was unable to create your &lt;b&gt;settings.php&lt;/b&gt; file.</value>
+  </data>
+</root>

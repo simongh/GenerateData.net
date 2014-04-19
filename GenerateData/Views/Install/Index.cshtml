@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>@ViewRes.SharedStrings.Title</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="@ViewRes.SharedStrings.MetaDescription" />
+	<meta name="keywords" content="@ViewRes.SharedStrings.MetaKeywords" />
+
+	@Styles.Render("~/content/themes/" + ViewBag.Theme + "/compiled")
+	@Styles.Render("~/content/smoothness/")
+
+	@Scripts.Render("~/bundles/shared")
+	<script type="text/javascript" src="/scripts/lib/require.js" data-main="/scripts/install"></script>
+	<script src="/scripts/requireConfig.js"></script>
+	@Scripts.Render("~/bundles/spinners")
+
+	<!--[if lt IE 9]>
+	@Scripts.Render("~/bundles/ie")
+	<![endif]-->
+</head>
+<body class="gdInstallPage" data-lang="{$currLang}">
+	<header>
+		<nav>
+			@*{language_dropdown nameId="gdSelectLanguage"}*@
+		</nav>
+	</header>
+	<nav id="gdMainTabs" class="gdHideNoJS">
+		<span id="gdProcessingIcon"></span>
+		<ul>
+			<li id="gdMainTab1" class="gdSelected">@ViewRes.InstallStrings.Install</li>
+			<li id="gdMainTab2" class="gdHideNoJS">@ViewRes.InstallStrings.Help</li>
+		</ul>
+	</nav>
+	<noscript><p>@ViewRes.SharedStrings.NoJs</p></noscript>
+	<section class="gdHideNoJS">
+		<div id="gdContent">
+			<ul class="gdMainTabContent">
+				<li id="gdMainTab1Content">{include file="install.tab1.tpl"}</li>
+				<li id="gdMainTab2Content" style="display:none">{include file="install.tab2.tpl"}</li>
+			</ul>
+		</div>
+	</section>
+	@{ Html.RenderPartial("footer");}
+</body>
+</html>

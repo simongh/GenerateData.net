@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>@ViewRes.SharedStrings.Title</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="@ViewRes.SharedStrings.MetaDescription" />
+	<meta name="keywords" content="@ViewRes.SharedStrings.MetaKeywords" />
+	@Styles.Render("~/content/themes/" + ViewBag.Theme + "/compiled")
+	@Styles.Render("~/content/smoothness/")
+
+	@Scripts.Render("/bundles/shared")
+	<script type="text/javascript" src="/scripts/lib/require.js" data-main="/scripts/login"></script>
+	<script type="text/javascript" src="/scripts/requireconfig.js"></script>
+	@Scripts.Render("~/bundles/spinners")
+
+	<!--[if lt IE 9 ]>
+	@Scripts.Render("~/bundles/ie")
+	<![endif]-->
+</head>
+<body class="gdLoginPage">
+	<header>
+		<nav>
+			@*{language_dropdown nameId="gdSelectLanguage"}*@
+		</nav>
+	</header>
+	<nav id="gdMainTabs" class="gdHideNoJS">
+		<span id="gdProcessingIcon"></span>
+		<ul>
+			<li id="gdMainTab1" class="gdSelected">@ViewRes.SharedStrings.Login</li>
+			<li id="gdMainTab2">@ViewRes.LoginStrings.ForgotPassword</li>
+		</ul>
+	</nav>
+	<noscript><div><p>@ViewRes.SharedStrings.NoJs</p></div></noscript>
+
+	<section class="gdHideNoJS">
+		<div id="gdContent">
+			<ul class="gdMainTabContent">
+				<li id="gdMainTab1Content">
+					<form>
+						<h1>@ViewRes.LoginStrings.PleaseLogin</h1>
+						<div id="gdMessages" class="gdMessage" style="margin-bottom: 12px">
+							<a class="gdMessageClose" href="#">X</a>
+							<div></div>
+						</div>
+						<div class="gdFields">
+							<div class="gdField">
+								<label for="email">@ViewRes.SharedStrings.Email</label>
+								<input type="text" id="email" value="" />
+							</div>
+							<div class="gdError" id="email_error"></div>
+							<div class="gdField">
+								<label for="password">@ViewRes.SharedStrings.Password</label>
+								<input type="password" id="password" value="" />
+							</div>
+							<div class="gdError" id="password_error"></div>
+						</div>
+						<div class="gdClear"></div>
+						<button class="gdPrimaryButton">@ViewRes.SharedStrings.ContinueRightArrow</button>
+					</form>
+				</li>
+				<li id="gdMainTab2Content" class="hidden">
+					<form>
+						<h1>@ViewRes.LoginStrings.ForgottenYourPasswordQ</h1>
+						<div id="gdMessagesReminder" class="gdMessage" style="margin-bottom: 12px">
+							<a class="gdMessageClose" href="#">X</a>
+							<div></div>
+						</div>
+						<p>
+							@ViewRes.LoginStrings.EnterEmailAddressToResetPassword
+						</p>
+						<div class="gdFields">
+							<div class="gdField">
+								<label for="emailReminder">@ViewRes.SharedStrings.Email</label>
+								<input type="text" id="emailReminder" value="" />
+							</div>
+							<div class="gdError" id="emailReminder_error"></div>
+						</div>
+						<div class="gdClear"></div>
+						<button class="gdPrimaryButton">@ViewRes.SharedStrings.ContinueRightArrow</button>
+					</form>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	@{ Html.RenderPartial("footer");}
+</body>
+</html>

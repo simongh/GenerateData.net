@@ -1,0 +1,209 @@
+﻿<h1>@ViewRes.InstallStrings.Installation</h1>
+
+<nav id="gdInstallNav">
+	<ol>
+		<li id="nav1" class="{if $currentPage == 1}gdSelected{else}gdComplete{/if}">@ViewRes.InstallStrings.CheckDatabaseInfo</li>
+		<li id="nav2" class="{if $currentPage == 2}gdSelected{elseif $currentPage > 2}gdComplete{/if}">@ViewRes.InstallStrings.CreateSettingsFile</li>
+		<li id="nav3" class="{if $currentPage == 3}gdSelected{elseif $currentPage > 3}gdComplete{/if}">@ViewRes.InstallStrings.UserAccounts</li>
+		<li id="nav4" class="{if $currentPage == 4}gdSelected{elseif $currentPage > 4}gdComplete{/if}">@ViewRes.InstallStrings.Plugins</li>
+		<li id="nav5" class="{if $currentPage == 5}gdSelected{/if}">@ViewRes.InstallStrings.CompleteExcl</li>
+	</ol>
+</nav>
+
+<div class="gdInstallSection{if $currentPage != 1} hidden{/if}" id="page1">
+	<div class="gdInstallTabMessage">
+		<div class="gdIcon"></div>
+		<h3>Uh-oh.</h3>
+		<div class="gdResponse"></div>
+	</div>
+
+	<p>
+		@ViewRes.InstallStrings.InstallationIntro
+	</p>
+
+	<form>
+		<div class="gdFields">
+			<div class="gdField">
+				<label for="dbHostname">@ViewRes.InstallStrings.Hostname</label>
+				<input type="text" id="dbHostname" value="localhost" />
+			</div>
+			<div class="gdError" id="dbHostname_error"></div>
+			<div class="gdField">
+				<label for="dbName">@ViewRes.InstallStrings.DatabaseName</label>
+				<input type="text" id="dbName" value="" />
+			</div>
+			<div class="gdError" id="dbName_error"></div>
+			<div class="gdField">
+				<label for="dbUsername">@ViewRes.InstallStrings.MysqlUsername</label>
+				<input type="text" id="dbUsername" value="" />
+			</div>
+			<div class="gdError" id="dbUsername_error"></div>
+			<div class="gdField">
+				<label for="dbPassword">@ViewRes.InstallStrings.MysqlPassword</label>
+				<input type="text" id="dbPassword" value="" class="pwdField" size="12" autocomplete="off" />
+			</div>
+			<div class="gdError" id="dbPassword_error"></div>
+			<div class="gdField">
+				<label for="dbTablePrefix">@ViewRes.InstallStrings.TablePrefix</label>
+				<input type="text" id="dbTablePrefix" value="{$tablePrefix}" maxlength="10" />
+			</div>
+			<div class="gdError" id="dbTablePrefix_error"></div>
+			<div class="gdField">
+				<label for="defaultLanguage">@ViewRes.InstallStrings.DefaultLanguage</label>
+				{language_dropdown nameId="gdDefaultLanguage" default="en"}
+			</div>
+			<div class="gdError" id="defaultLanguage_error"></div>
+		</div>
+
+		<div class="gdClear"></div>
+
+		<button class="gdPrimaryButton">@ViewRes.SharedStrings.ContinueRightArrow</button>
+	</form>
+</div>
+
+<div class="gdInstallSection{if $currentPage != 2} hidden{/if}" id="page2">
+
+	<div class="gdInstallTabMessage">
+		<div class="gdIcon"></div>
+		<h3>Uh-oh.</h3>
+		<div class="gdResponse"></div>
+	</div>
+
+	<div id="gdInstallCreateSettingsFile">
+		<p>
+			@ViewRes.InstallStrings.InstallationStep2Intro
+		</p>
+
+		<form>
+			<button class="gdPrimaryButton">@ViewRes.InstallStrings.CreateFileRightarrow</button>
+		</form>
+	</div>
+
+	<div id="gdInstallCreateSettingsFileErrorScenario" class="hidden">
+		<p>
+			@ViewRes.InstallStrings.InstallationFailedCreateSettingsFileMsg
+		</p>
+
+		<textarea id="gdSettingsFileContents"></textarea>
+
+		<form>
+			<button class="gdPrimaryButton">@ViewRes.InstallStrings.ConfirmFileExists</button>
+		</form>
+	</div>
+
+</div>
+
+<div class="gdInstallSection{if $currentPage != 3} hidden{/if}" id="page3">
+
+	<div class="gdInstallTabMessage">
+		<div class="gdIcon"></div>
+		<h3>Uh-oh.</h3>
+		<div class="gdResponse"></div>
+	</div>
+
+	<p>
+		@ViewRes.InstallStrings.InstallationStep3Intro
+	</p>
+
+	<form>
+		<div>
+			<input type="radio" name="userAccountSetup" id="acs1" value="anonymousAdmin" checked="checked" />
+			<label for="acs1">@ViewRes.InstallStrings.SingleAnonymousUserAccount</label>
+		</div>
+		<div>
+			<input type="radio" name="userAccountSetup" id="acs2" value="single" />
+			<label for="acs2">@ViewRes.InstallStrings.SingleUserAccountRequiresLogin</label>
+		</div>
+		<div style="margin-bottom: 20px">
+			<input type="radio" name="userAccountSetup" id="acs3" value="multiple" />
+			<label for="acs3">@ViewRes.InstallStrings.MultipleAccounts</label>
+		</div>
+
+		<div class="gdFields">
+			<div class="gdCol" id="gdInstallAccountDetails" style="display:none">
+				<h3 id="gdInstallAccountDetailsMessage"></h3>
+
+				<div class="gdError" id="firstName_error"></div>
+				<div class="gdError" id="lastName_error"></div>
+				<div class="gdError" id="email_error"></div>
+				<div class="gdError" id="password_error"></div>
+
+				<div class="gdField gdFirstNameRow">
+					<label for="firstName">@ViewRes.InstallStrings.FirstName</label>
+					<input type="text" id="firstName" value="" />
+				</div>
+
+				<div class="gdField gdLastNameRow">
+					<label for="lastName">@ViewRes.InstallStrings.LastName</label>
+					<input type="text" id="lastName" value="" />
+				</div>
+
+				<div class="gdField gdEmailRow">
+					<label for="email">@ViewRes.SharedStrings.Email</label>
+					<input type="text" id="email" value="" />
+				</div>
+
+				<div class="gdField gdPasswordRow">
+					<label for="password">@ViewRes.SharedStrings.Password</label>
+					<input type="text" id="password" value="{$randomPassword}" class="pwdField" autocomplete="off" />
+					<span id="gdRefreshPassword"></span>
+				</div>
+			</div>
+
+			<div class="gdCol" id="gdInstallAnonymousUserSettings" style="display:none">
+				<span class="rightBox">
+					<input type="checkbox" id="allowAnonymousAccess" /><label for="allowAnonymousAccess">@ViewRes.InstallStrings.FeatureEnabled</label>
+				</span>
+				<h3>@ViewRes.InstallStrings.AnonymousAccess</h3>
+				<div>@ViewRes.InstallStrings.AnonymousUserDesc</div>
+				<div><i>{@ViewRes.InstallStrings.AnonymousUserMessage</i></div>
+				<textarea id="anonymousUserPermissionDeniedMsg" name="anonymousUserPermissionDeniedMsg" class="gdDisabled" disabled="disabled">
+					@ViewRes.InstallStrings.AnonymousUserDefaultMessage
+				</textarea>
+			</div>
+		</div>
+
+		<div class="gdClear"></div>
+
+		<button class="gdPrimaryButton">@ViewRes.SharedStrings.ContinueRightArrow</button>
+	</form>
+</div>
+
+<div class="gdInstallSection{if $currentPage != 4} hidden{/if}" id="page4">
+	<p>
+		@ViewRes.InstallStrings.InstallationPluginIntro
+	</p>
+
+	<div id="gdPluginInstallationResults" class="hidden">
+		<div>
+			<h4>1. @ViewRes.InstallStrings.DataTypes</h4>
+			<div id="gdDataTypeResponse" class="gdResponse"></div>
+		</div>
+		<div>
+			<h4>2. @ViewRes.InstallStrings.ExportTypes</h4>
+			<div id="gdExportTypeResponse" class="gdResponse"></div>
+		</div>
+		<div>
+			<h4>3. @ViewRes.InstallStrings.Countries</h4>
+			<div id="gdCountriesResponse" class="gdResponse"></div>
+		</div>
+	</div>
+	<div class="gdClear"></div>
+
+	<form>
+		<button class="gdPrimaryButton" id="gdInstallPluginsBtn">@ViewRes.InstallStrings.InstallPluginsRightarrow</button>
+	</form>
+</div>
+
+<div class="gdInstallSection{if $currentPage != 5} hidden{/if}" id="page5">
+	<p>
+		@ViewRes.InstallStrings.InstallationCompleteText
+	</p>
+
+	<form action="./">
+		<button class="gdPrimaryButton">@ViewRes.InstallStrings.GotoScriptRightarrow</button>
+	</form>
+</div>
+
+<div class="gdClear"></div>
+

@@ -35,7 +35,7 @@ namespace GenerateData.Plugins
 			protected set;
 		}
 
-		public abstract void Install();
+		public abstract void Install(ICountryPluginService service);
 
 		public virtual void Uninstall()
 		{ }

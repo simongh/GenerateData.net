@@ -77,8 +77,11 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Plugins\CountryPlugin.cs" />
     <Compile Include="Plugins\CountryPluginService.cs" />
+    <Compile Include="Plugins\CountryPlugins\Australia.cs" />
+    <Compile Include="Plugins\CountryPlugins\Austria.cs" />
     <Compile Include="Plugins\DataTypePlugin.cs" />
     <Compile Include="Plugins\ExportTypePlugin.cs" />
+    <Compile Include="Plugins\ICountryPluginService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AccountRepository.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />

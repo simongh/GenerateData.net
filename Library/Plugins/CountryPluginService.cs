@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GenerateData.Plugins
 {
-	internal class CountryPluginService
+	internal class CountryPluginService : ICountryPluginService
 	{
 		private readonly Services.ISettingsService _settings;
 		private readonly Repositories.CountryRepository _countries;
