@@ -1,0 +1,33 @@
+﻿<h3>@SharedStrings.UserAccounts <span id="gdNumUserAccounts"></span></h3>
+
+<p>
+	@Html.Raw(HomeStrings.UserAccountSectionIntro)
+</p>
+
+<div id="gdAccountList" class="hidden">
+	<div id="gdAccountListEmpty">
+		<div class="gdMessage gdNotify gdStickyMessage" style="display:block">
+			<p>@HomeStrings.NoUserAccountsDefined</p>
+		</div>
+	</div>
+	<div id="gdAccountListNonEmpty">
+		<table cellpadding="0" cellspacing="0" class="tablesorter tablesorter-default">
+			<thead>
+				<tr>
+					<th width="40">ID</th>
+					<th>@SharedStrings.FirstName</th>
+					<th>@SharedStrings.LastName</th>
+					<th>@SharedStrings.Email</th>
+					<th align="center">@HomeStrings.NumRecordsGenerated</th>
+					<th>@HomeStrings.LastLoggedIn</th>
+					<th>@HomeStrings.DateCreated</th>
+					<th data-sorter="false" width="18"></th>
+					<th data-sorter="false" width="18"></th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+</div>
+
+<button class="gdPrimaryButton" id="gdCreateAccount">@Html.Raw(HomeStrings.CreateAccountRightarrow)</button>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ViewRes {
+namespace GenerateData.Resources {
     using System;
     
     
@@ -61,29 +61,11 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter your email address below to reset your password..
-        /// </summary>
-        public static string EnterEmailAddressToResetPassword {
-            get {
-                return ResourceManager.GetString("EnterEmailAddressToResetPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Forgot Password.
         /// </summary>
         public static string ForgotPassword {
             get {
                 return ResourceManager.GetString("ForgotPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Forgotten your password?.
-        /// </summary>
-        public static string ForgottenYourPasswordQ {
-            get {
-                return ResourceManager.GetString("ForgottenYourPasswordQ", resourceCulture);
             }
         }
         

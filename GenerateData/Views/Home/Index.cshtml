@@ -1,73 +1,70 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title>@ViewRes.SharedStrings.Title</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="@ViewRes.SharedStrings.MetaDescription" />
-	<meta name="keywords" content="@ViewRes.SharedStrings.MetaKeywords" />
+﻿@model GenerateData.ViewModels.Home
 
-	@Styles.Render("~/content/smoothness")
-	@Styles.Render("~/content/index")
-	@Styles.Render("~/scripts/codemirror/lib")
-	@Styles.Render("~/content/themes/" + ViewBag.Theme + "/compiled")
-
-	@Scripts.Render("~/bundles/shared")
-	<script type="text/javascript" src="/scripts/lib/require.js"></script>
-	<script type="text/javascript" src="/scripts/requireconfig.js"></script>
-	@Scripts.Render("~/bundles/spinners")
-
-	<!--[if lt IE 9]>
-		@Scripts.Render("~/bundles/ie")
-	<![endif]-->
-</head>
-<body data-lang="@*{$currLang}*@" data-logged-in="@*{$isLoggedIn}*@" data-user-account-setup="@*{$settings.userAccountSetup}*@">
-	<header>
-		<nav class="gdHideNoJS">
-			<ul>
-				<li id="gdUserAccount" @*{if !$isloggedin || $settings.useraccountsetup= ="anonymousAdmin" }*@ style="display:none" @*{ />if}*@>
-				<a href="#">@ViewRes.HomeStrings.YourAccount</a> |
-				</li>
-				<li id="gdLogin" @*{if $isloggedin || $settings.useraccountsetup= ="anonymousAdmin" }*@ style="display:none" @*{ />if}*@>
-				<a href="#">@ViewRes.SharedStrings.Login</a> |
-				</li>
-				<li id="gdLogout" @*{if !$isloggedin || $settings.useraccountsetup= ="anonymousAdmin" }*@ style="display:none" @*{ />if}*@>
-				<a href="#">@ViewRes.SharedStrings.Logout</a> |
-				</li>
-			</ul>
-			@*{language_dropdown nameId="gdSelectLanguage"}*@
-		</nav>
-	</header>
+@*<body data-lang="@Model.CurrentLanguage" data-logged-in="@Model.IsLoggedIn" data-user-account-setup="@Model.UserAccountSetup.ToString()">*@
 	<nav id="gdMainTabs" class="gdHideNoJS">
 		<span id="gdDataSetStatusLine"></span>
 		<span id="gdProcessingIcon"></span>
 		<ul>
-			<li id="gdMainTab1" class="gdSelected">@ViewRes.HomeStrings.Generate</li>
-			<li id="gdMainTab2" @*{if $settings.useraccountsetup !="multiple" || $accounttype !="admin" }*@ style="display:none" @*{ />if}>*@ @ViewRes.HomeStrings.Accounts</li>
-			<li id="gdMainTab3" @*{if $settings.useraccountsetup !="anonymousAdmin" && $accounttype !="admin" }*@ style="display:none" @*{ />if}>*@ @ViewRes.HomeStrings.Settings</li>
-			<li id="gdMainTab4">@ViewRes.HomeStrings.About</li>
+			<li id="gdMainTab1" class="gdSelected">@HomeStrings.Generate</li>
+			<li id="gdMainTab2" @if (Model.UserAccountSetup != AccountSetup.Multiple || Model.AccountType != AccountType.Admin) { <text> style="display:none" </text>  }> @HomeStrings.Accounts</li>
+			<li id="gdMainTab3" @if (Model.UserAccountSetup != AccountSetup.AnonymousAdmin || Model.AccountType != AccountType.Admin) { <text> style="display:none" </text>  }> @HomeStrings.Settings</li>
+			<li id="gdMainTab4">@HomeStrings.About</li>
 		</ul>
 	</nav>
-	<noscript><p>@ViewRes.SharedStrings.NoJs</p></noscript>
+	<noscript><p>@SharedStrings.NoJs</p></noscript>
 	<section class="gdHideNoJS">
 		<div id="gdContent">
 			<ul class="gdMainTabContent">
-				<li id="gdMainTab1Content">@*{include file="generate.tab1.tpl"}*@</li>
-				<li id="gdMainTab2Content" style="display:none">@*{include file="generate.tab2.tpl"}*@</li>
-				<li id="gdMainTab3Content" style="display:none">@*{include file="generate.tab3.tpl"}*@</li>
-				<li id="gdMainTab4Content" style="display:none">@*{include file="generate.tab4.tpl"}*@</li>
+				<li id="gdMainTab1Content">@{Html.RenderPartial("tab1", Model);}</li>
+				<li id="gdMainTab2Content" style="display:none">@{Html.RenderPartial("tab2", Model);}</li>
+				<li id="gdMainTab3Content" style="display:none">@{Html.RenderPartial("tab3", Model);}</li>
+				<li id="gdMainTab4Content" style="display:none">@{Html.RenderPartial("tab4", Model);}</li>
 			</ul>
 		</div>
 	</section>
 
-	<div id="gdPageLoad">@ViewRes.HomeStrings.Loading</div>
+	<div id="gdPageLoad">@HomeStrings.Loading</div>
 
-	@{ Html.RenderPartial("footer");}
+@section header {
+	<nav class="gdHideNoJS">
+		<ul>
+
+			<li id="gdUserAccount" @if (!Model.IsLoggedIn || Model.UserAccountSetup == AccountSetup.AnonymousAdmin) { <text> style="display:none" </text>   }>
+				<a href="#">@HomeStrings.YourAccount</a> |
+			</li>
+			<li id="gdLogin" @if (Model.IsLoggedIn || Model.UserAccountSetup == AccountSetup.AnonymousAdmin) { <text> style="display:none" </text>   }>
+				<a href="#">@SharedStrings.Login</a> |
+			</li>
+			<li id="gdLogout" @if (!Model.IsLoggedIn || Model.UserAccountSetup == AccountSetup.AnonymousAdmin) { <text> style="display:none" </text>   }>
+				<a href="#">@SharedStrings.Logout</a> |
+			</li>
+		</ul>
+		@Html.LanguageDropDown(new { id = "gdSelectLanguage", languages = Model.Languages })
+	</nav>
+}
+
+@section css {
+
+	@Styles.Render("~/content/index")
+	@Styles.Render("~/scripts/codemirror/lib")
+	@Styles.Render("~/content/themes/" + Model.Theme + "/compiled")
+
+}
+
+@section topscripts {
+
+	<script type="text/javascript" src="/scripts/libs/require.js"></script>
+	<script type="text/javascript" src="/scripts/requireconfig.js"></script>
+
+}
+
+@section bottomscripts {
 
 	@*{if $useMinifiedResources && $minifiedResourcePaths != false}
-	<script src="resources/scripts/libs/require.js"></script>
-	<script src="resources/scripts/requireConfig.js"></script>
-	<script>require(["{$minifiedResourcePaths.appStart}"], function() {});</script>
-	{else}*@
+		<script src="resources/scripts/libs/require.js"></script>
+		<script src="resources/scripts/requireConfig.js"></script>
+		<script>require(["{$minifiedResourcePaths.appStart}"], function() {});</script>
+		{else}*@
 	<script>
 		require([
 			"manager",
@@ -76,12 +73,11 @@
 			//{$exportTypeJSModules},
 			//{$dataTypeJSModules},
 			"pageInit"
-		], function(manager) {
+		], function (manager)
+		{
 			manager.start();
 		});
 	</script>
 	@*{/if}*@
 
-
-</body>
-</html>
+}

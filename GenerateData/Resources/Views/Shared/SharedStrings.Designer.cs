@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ViewRes {
+namespace GenerateData.Resources {
     using System;
     
     
@@ -70,11 +70,83 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Countries.
+        /// </summary>
+        public static string Countries {
+            get {
+                return ResourceManager.GetString("Countries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Types.
+        /// </summary>
+        public static string DataTypes {
+            get {
+                return ResourceManager.GetString("DataTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
         public static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your email address below to reset your password..
+        /// </summary>
+        public static string EnterEmailAddressToResetPassword {
+            get {
+                return ResourceManager.GetString("EnterEmailAddressToResetPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export Types.
+        /// </summary>
+        public static string ExportTypes {
+            get {
+                return ResourceManager.GetString("ExportTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        public static string FirstName {
+            get {
+                return ResourceManager.GetString("FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forgotten your password?.
+        /// </summary>
+        public static string ForgottenYourPasswordQ {
+            get {
+                return ResourceManager.GetString("ForgottenYourPasswordQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help.
+        /// </summary>
+        public static string Help {
+            get {
+                return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        public static string LastName {
+            get {
+                return ResourceManager.GetString("LastName", resourceCulture);
             }
         }
         
@@ -115,6 +187,15 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Multiple accounts.
+        /// </summary>
+        public static string MultipleAccounts {
+            get {
+                return ResourceManager.GetString("MultipleAccounts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please enable javascript in your browser..
         /// </summary>
         public static string NoJs {
@@ -133,11 +214,38 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Plugins.
+        /// </summary>
+        public static string Plugins {
+            get {
+                return ResourceManager.GetString("Plugins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Single user account, requires login.
+        /// </summary>
+        public static string SingleUserAccountRequiresLogin {
+            get {
+                return ResourceManager.GetString("SingleUserAccountRequiresLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to generatedata.com.
         /// </summary>
         public static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Accounts.
+        /// </summary>
+        public static string UserAccounts {
+            get {
+                return ResourceManager.GetString("UserAccounts", resourceCulture);
             }
         }
     }

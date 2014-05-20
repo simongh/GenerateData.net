@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ViewRes {
+namespace GenerateData.Resources {
     using System;
     
     
@@ -124,15 +124,6 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Countries.
-        /// </summary>
-        public static string Countries {
-            get {
-                return ResourceManager.GetString("Countries", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Create File &amp;raquo;.
         /// </summary>
         public static string CreateFileRightarrow {
@@ -160,29 +151,11 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data Types.
-        /// </summary>
-        public static string DataTypes {
-            get {
-                return ResourceManager.GetString("DataTypes", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Default Language.
         /// </summary>
         public static string DefaultLanguage {
             get {
                 return ResourceManager.GetString("DefaultLanguage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Export Types.
-        /// </summary>
-        public static string ExportTypes {
-            get {
-                return ResourceManager.GetString("ExportTypes", resourceCulture);
             }
         }
         
@@ -196,29 +169,11 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to First Name.
-        /// </summary>
-        public static string FirstName {
-            get {
-                return ResourceManager.GetString("FirstName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Go to script &amp;raquo;.
         /// </summary>
         public static string GotoScriptRightarrow {
             get {
                 return ResourceManager.GetString("GotoScriptRightarrow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Help.
-        /// </summary>
-        public static string Help {
-            get {
-                return ResourceManager.GetString("Help", resourceCulture);
             }
         }
         
@@ -349,24 +304,6 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Last Name.
-        /// </summary>
-        public static string LastName {
-            get {
-                return ResourceManager.GetString("LastName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Multiple accounts.
-        /// </summary>
-        public static string MultipleAccounts {
-            get {
-                return ResourceManager.GetString("MultipleAccounts", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to MySQL Password.
         /// </summary>
         public static string MysqlPassword {
@@ -385,29 +322,11 @@ namespace ViewRes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plugins.
-        /// </summary>
-        public static string Plugins {
-            get {
-                return ResourceManager.GetString("Plugins", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Single, anonymous user account.
         /// </summary>
         public static string SingleAnonymousUserAccount {
             get {
                 return ResourceManager.GetString("SingleAnonymousUserAccount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Single user account, requires login.
-        /// </summary>
-        public static string SingleUserAccountRequiresLogin {
-            get {
-                return ResourceManager.GetString("SingleUserAccountRequiresLogin", resourceCulture);
             }
         }
         
@@ -426,15 +345,6 @@ namespace ViewRes {
         public static string TablePrefix {
             get {
                 return ResourceManager.GetString("TablePrefix", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User Accounts.
-        /// </summary>
-        public static string UserAccounts {
-            get {
-                return ResourceManager.GetString("UserAccounts", resourceCulture);
             }
         }
     }

@@ -53,6 +53,7 @@
     <Compile Include="Config\ConfigService.cs" />
     <Compile Include="Config\IConfigService.cs" />
     <Compile Include="Config\Section.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Data\Account.cs" />
     <Compile Include="Data\City.cs" />
     <Compile Include="Data\Configuration.cs" />

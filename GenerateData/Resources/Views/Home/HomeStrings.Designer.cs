@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ViewRes {
+namespace GenerateData.Resources {
     using System;
     
     
@@ -70,11 +70,326 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sometimes you need fake data for things like testing software, populating databases and creating realistic-looking mockups. For text, we have &lt;i&gt;lorem ipsum&lt;/i&gt;; but for everything else...? This tool was written to provide a quick and simple way to let you generate large volumes of custom data in whatever format you require..
+        /// </summary>
+        public static string AboutPara1 {
+            get {
+                return ResourceManager.GetString("AboutPara1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The &lt;b&gt;Generate&lt;/b&gt; page contains the entire script: just fill in the various fields in the page to construct the data set you&apos;re interested in, then click the Generate button. And hey presto! Easy, huh?.
+        /// </summary>
+        public static string AboutPara2 {
+            get {
+                return ResourceManager.GetString("AboutPara2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The out-the-box script contains the sort of functionality you generally need. But nothing&apos;s ever complete - maybe you need to generate random esoteric math equations, pull random tweets or display random images from Flickr with the word &quot;Red-backed=&quot;&quot; vole=&quot;&quot;&quot; in the title. Who knows. Everyone&apos;s use-case is different..
+        /// </summary>
+        public static string AboutPara3 {
+            get {
+                return ResourceManager.GetString("AboutPara3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With this in mind, the new version of the script (3.0.0+) was designed to be fully extensible: developers can write their own Data Types to generate new types of random data, and even customize the Export Types - i.e. the format in which the data is output. For people interested in generating more accurate localized geographical data, they can also add new Country plugins that supply region names (states, provinces, territories etc), city names and postal/zip code formats for their country of choice..
+        /// </summary>
+        public static string AboutPara4 {
+            get {
+                return ResourceManager.GetString("AboutPara4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For more information on how to extend it, visit the &lt;a href=&quot;docs/&quot;&gt;developer documentation&lt;/a&gt;..
+        /// </summary>
+        public static string AboutPara5 {
+            get {
+                return ResourceManager.GetString("AboutPara5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What &lt;i&gt;is&lt;/i&gt; this thing?.
+        /// </summary>
+        public static string AboutTitle {
+            get {
+                return ResourceManager.GetString("AboutTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account Info.
+        /// </summary>
+        public static string AccountInfo {
+            get {
+                return ResourceManager.GetString("AccountInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Accounts.
         /// </summary>
         public static string Accounts {
             get {
                 return ResourceManager.GetString("Accounts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account Settings.
+        /// </summary>
+        public static string AccountSettings {
+            get {
+                return ResourceManager.GetString("AccountSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account type.
+        /// </summary>
+        public static string AccountType {
+            get {
+                return ResourceManager.GetString("AccountType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your account has been updated..
+        /// </summary>
+        public static string AccountUpdated {
+            get {
+                return ResourceManager.GetString("AccountUpdated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        public static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A few links.
+        /// </summary>
+        public static string AFewLinks {
+            get {
+                return ResourceManager.GetString("AFewLinks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All Data Type plugins.
+        /// </summary>
+        public static string AllDataTypePlugins {
+            get {
+                return ResourceManager.GetString("AllDataTypePlugins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All Export Type plugins.
+        /// </summary>
+        public static string AllExportTypePlugins {
+            get {
+                return ResourceManager.GetString("AllExportTypePlugins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Back {
+            get {
+                return ResourceManager.GetString("Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear the Page.
+        /// </summary>
+        public static string ClearThePage {
+            get {
+                return ResourceManager.GetString("ClearThePage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete this user account?.
+        /// </summary>
+        public static string ConfirmDeleteUserAccount {
+            get {
+                return ResourceManager.GetString("ConfirmDeleteUserAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country-Specific Data.
+        /// </summary>
+        public static string CountrySpecificData {
+            get {
+                return ResourceManager.GetString("CountrySpecificData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Account &amp;raquo;.
+        /// </summary>
+        public static string CreateAccountRightarrow {
+            get {
+                return ResourceManager.GetString("CreateAccountRightarrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Created.
+        /// </summary>
+        public static string DataCreated {
+            get {
+                return ResourceManager.GetString("DataCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Set.
+        /// </summary>
+        public static string DataSet {
+            get {
+                return ResourceManager.GetString("DataSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is where you define exactly what kind of data you want to generate. Try filling in a row or two and click the Generate button. You&apos;ll get the hang of it pretty fast..
+        /// </summary>
+        public static string DataSetHelp {
+            get {
+                return ResourceManager.GetString("DataSetHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Set Name.
+        /// </summary>
+        public static string DataSetName {
+            get {
+                return ResourceManager.GetString("DataSetName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Type.
+        /// </summary>
+        public static string DataType {
+            get {
+                return ResourceManager.GetString("DataType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date account created.
+        /// </summary>
+        public static string DateAccountCreated {
+            get {
+                return ResourceManager.GetString("DateAccountCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date Created.
+        /// </summary>
+        public static string DateCreated {
+            get {
+                return ResourceManager.GetString("DateCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Del.
+        /// </summary>
+        public static string Del {
+            get {
+                return ResourceManager.GetString("Del", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Developer.
+        /// </summary>
+        public static string Developer {
+            get {
+                return ResourceManager.GetString("Developer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The following sections lets you fine-tune what you see in your javascript console for development purposes..
+        /// </summary>
+        public static string DeveloperIntro {
+            get {
+                return ResourceManager.GetString("DeveloperIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email the user their login information.
+        /// </summary>
+        public static string EmailUserLoginInfo {
+            get {
+                return ResourceManager.GetString("EmailUserLoginInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples.
+        /// </summary>
+        public static string Examples {
+            get {
+                return ResourceManager.GetString("Examples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This section lets you control the format of your generated data. Each format may provide different options to let you tailor the output to exactly what you want..
+        /// </summary>
+        public static string ExportTypesHelp {
+            get {
+                return ResourceManager.GetString("ExportTypesHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extend it.
+        /// </summary>
+        public static string ExtendIt {
+            get {
+                return ResourceManager.GetString("ExtendIt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fork the code on github.
+        /// </summary>
+        public static string ForkOnGithub {
+            get {
+                return ResourceManager.GetString("ForkOnGithub", resourceCulture);
             }
         }
         
@@ -88,11 +403,362 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Generated &lt;span id=&quot;gdGenerateCount&quot;&gt;&lt;/span&gt; of &lt;span id=&quot;gdGenerateTotal&quot;&gt;&lt;/span&gt; results.
+        /// </summary>
+        public static string GeneratedXOfYResults {
+            get {
+                return ResourceManager.GetString("GeneratedXOfYResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generate in-page.
+        /// </summary>
+        public static string GenerateInPage {
+            get {
+                return ResourceManager.GetString("GenerateInPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Go to the website.
+        /// </summary>
+        public static string GotoWebsite {
+            get {
+                return ResourceManager.GetString("GotoWebsite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hide data format options.
+        /// </summary>
+        public static string HideDataFormatOptions {
+            get {
+                return ResourceManager.GetString("HideDataFormatOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Info and Stats.
+        /// </summary>
+        public static string InfoAndStats {
+            get {
+                return ResourceManager.GetString("InfoAndStats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Logged In.
+        /// </summary>
+        public static string LastLoggedIn {
+            get {
+                return ResourceManager.GetString("LastLoggedIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Modified.
+        /// </summary>
+        public static string LastModified {
+            get {
+                return ResourceManager.GetString("LastModified", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Latest project news.
+        /// </summary>
+        public static string LatestProjectNews {
+            get {
+                return ResourceManager.GetString("LatestProjectNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit pub/sub console messages to specific modules:.
+        /// </summary>
+        public static string LimitPubSubConsoleMessages {
+            get {
+                return ResourceManager.GetString("LimitPubSubConsoleMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Link to this Data Set.
+        /// </summary>
+        public static string LinkToThisDataSet {
+            get {
+                return ResourceManager.GetString("LinkToThisDataSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List console.warn() events.
+        /// </summary>
+        public static string ListConsoleWarnEvents {
+            get {
+                return ResourceManager.GetString("ListConsoleWarnEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List &lt;b&gt;core&lt;/b&gt; events.
+        /// </summary>
+        public static string ListCoreEvents {
+            get {
+                return ResourceManager.GetString("ListCoreEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List module &lt;b&gt;publish&lt;/b&gt; events.
+        /// </summary>
+        public static string ListModulePublishEvents {
+            get {
+                return ResourceManager.GetString("ListModulePublishEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List module &lt;b&gt;subscribe&lt;/b&gt; events.
+        /// </summary>
+        public static string ListModuleSubscribeEvents {
+            get {
+                return ResourceManager.GetString("ListModuleSubscribeEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load.
+        /// </summary>
+        public static string Load {
+            get {
+                return ResourceManager.GetString("Load", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loading....
         /// </summary>
         public static string Loading {
             get {
                 return ResourceManager.GetString("Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I understand that to share this Data Set, I need to make it public..
+        /// </summary>
+        public static string MakeDataSetPublicAgreement {
+            get {
+                return ResourceManager.GetString("MakeDataSetPublicAgreement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Misc.
+        /// </summary>
+        public static string Misc {
+            get {
+                return ResourceManager.GetString("Misc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New window/tab.
+        /// </summary>
+        public static string NewWindowOrTab {
+            get {
+                return ResourceManager.GetString("NewWindowOrTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You don&apos;t have any saved data sets..
+        /// </summary>
+        public static string NoSavedDataSets {
+            get {
+                return ResourceManager.GetString("NoSavedDataSets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No user accounts defined..
+        /// </summary>
+        public static string NoUserAccountsDefined {
+            get {
+                return ResourceManager.GetString("NoUserAccountsDefined", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generated.
+        /// </summary>
+        public static string NumRecordsGenerated {
+            get {
+                return ResourceManager.GetString("NumRecordsGenerated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Num Saved Data Sets.
+        /// </summary>
+        public static string NumSavedDataSets {
+            get {
+                return ResourceManager.GetString("NumSavedDataSets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options.
+        /// </summary>
+        public static string Options {
+            get {
+                return ResourceManager.GetString("Options", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order.
+        /// </summary>
+        public static string Order {
+            get {
+                return ResourceManager.GetString("Order", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You only need to fill the password fields in if you want to change it..
+        /// </summary>
+        public static string PasswordChangeNote {
+            get {
+                return ResourceManager.GetString("PasswordChangeNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Any time you add or remove a plugin, you need to reset the plugins. This will update the database and ensure you can access the plugins you require..
+        /// </summary>
+        public static string PluginsIntro {
+            get {
+                return ResourceManager.GetString("PluginsIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prompt to download.
+        /// </summary>
+        public static string PromptToDownload {
+            get {
+                return ResourceManager.GetString("PromptToDownload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Public?.
+        /// </summary>
+        public static string PublicQ {
+            get {
+                return ResourceManager.GetString("PublicQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Read the developer documentation.
+        /// </summary>
+        public static string ReadDeveloperDoc {
+            get {
+                return ResourceManager.GetString("ReadDeveloperDoc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Re-enter password.
+        /// </summary>
+        public static string ReenterPassword {
+            get {
+                return ResourceManager.GetString("ReenterPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regenerate.
+        /// </summary>
+        public static string Regenerate {
+            get {
+                return ResourceManager.GetString("Regenerate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset plugins.
+        /// </summary>
+        public static string ResetPlugins {
+            get {
+                return ResourceManager.GetString("ResetPlugins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;b&gt;You have bundling/minification enabled&lt;/b&gt;. After clicking this button you will need to run &lt;i&gt;grunt&lt;/i&gt; to recreate the bundles. For more information &lt;a href=&quot;http://benkeen.github.io/generatedata/developer.html#bundling&quot; target=&quot;_blank&quot;&gt;read this documentation page&lt;/a&gt;. If you have any problems, you may want to turn off bundling..
+        /// </summary>
+        public static string ResetPluginsWithBundling {
+            get {
+                return ResourceManager.GetString("ResetPluginsWithBundling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Column Title.
+        /// </summary>
+        public static string RowLabel {
+            get {
+                return ResourceManager.GetString("RowLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to rows.
+        /// </summary>
+        public static string Rows {
+            get {
+                return ResourceManager.GetString("Rows", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rows Generated.
+        /// </summary>
+        public static string RowsGenerated {
+            get {
+                return ResourceManager.GetString("RowsGenerated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Row(s).
+        /// </summary>
+        public static string RowSp {
+            get {
+                return ResourceManager.GetString("RowSp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        public static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to De-&lt;i&gt;nied&lt;/i&gt;. In order to share this Data Set with other people, you need to save it first..
+        /// </summary>
+        public static string SaveDataSetToLink {
+            get {
+                return ResourceManager.GetString("SaveDataSetToLink", resourceCulture);
             }
         }
         
@@ -106,11 +772,93 @@ namespace ViewRes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        public static string Theme {
+            get {
+                return ResourceManager.GetString("Theme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This section lets you control what country-specific data should be included in your generated data sets. The values you select here affect certain Data Types that you may select, such as &lt;i&gt;Region&lt;/i&gt;, &lt;i&gt;Postal/Zip&lt;/i&gt; and &lt;i&gt;Country&lt;/i&gt;.&lt;/p&gt;&lt;p&gt;
+        ///		To give you a better idea of what this means, try selecting the &lt;i&gt;Region&lt;/i&gt; Data Type for one of your rows in the Data Set section, then add / remove countries from the Country-Specific Data section. You&apos;ll see that the row options that appear are directly aff [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string TipCountryData {
+            get {
+                return ResourceManager.GetString("TipCountryData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total rows generated.
+        /// </summary>
+        public static string TotalRowsGenerated {
+            get {
+                return ResourceManager.GetString("TotalRowsGenerated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Account.
+        /// </summary>
+        public static string UpdateAccount {
+            get {
+                return ResourceManager.GetString("UpdateAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Settings.
+        /// </summary>
+        public static string UpdateSettings {
+            get {
+                return ResourceManager.GetString("UpdateSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This section lets you create any number of users accounts to allow people access to the script. Only you are able to create or delete accounts..
+        /// </summary>
+        public static string UserAccountSectionIntro {
+            get {
+                return ResourceManager.GetString("UserAccountSectionIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your Account.
         /// </summary>
         public static string YourAccount {
             get {
                 return ResourceManager.GetString("YourAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your data set name here....
+        /// </summary>
+        public static string YourDataSetNameHere {
+            get {
+                return ResourceManager.GetString("YourDataSetNameHere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Data Sets.
+        /// </summary>
+        public static string YourDataSets {
+            get {
+                return ResourceManager.GetString("YourDataSets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zip?.
+        /// </summary>
+        public static string ZipQ {
+            get {
+                return ResourceManager.GetString("ZipQ", resourceCulture);
             }
         }
     }

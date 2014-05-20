@@ -5,12 +5,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GenerateData.Data
 {
-	public enum AccountType
-	{
-		Admin,
-		User
-	}
-
 	public class Account
 	{
 		[Key]

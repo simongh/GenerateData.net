@@ -1,0 +1,11 @@
+﻿@model GenerateData.ViewModels.Language
+@{
+	Layout = null;
+}
+
+define([
+], function() {
+
+	var L=@Html.Raw(Model.GetStrings());
+	return L;
+});

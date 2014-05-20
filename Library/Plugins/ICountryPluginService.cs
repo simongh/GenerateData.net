@@ -2,10 +2,10 @@
 
 namespace GenerateData.Plugins
 {
-	interface ICountryPluginService
+	public interface ICountryPluginService
 	{
-		IEnumerable<CountryPlugin> GetPlugins();
-		CountryPlugin GetPlugin(string name);
+		IEnumerable<CountryPlugin> GetPlugins(bool installedOnly = true);
+		//CountryPlugin GetPlugin(string name);
 		void PopulateDb(Data.Country country);
 	}
 }

@@ -86,6 +86,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -117,14 +118,22 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InstallController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\LanguageDropDownExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\tmp.Designer.cs">
+    <Compile Include="Resources\Scripts.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>tmp.resx</DependentUpon>
+      <DependentUpon>Scripts.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\Views\Home\HomeStrings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -151,8 +160,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SharedStrings.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\Constants.cs" />
+    <Compile Include="ViewModels\Home.cs" />
+    <Compile Include="ViewModels\Language.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\themes\classic\sass\misc.css">
+      <DependentUpon>misc.scss</DependentUpon>
+    </Content>
+    <Content Include="Scripts\accountManager.js" />
     <Content Include="Content\chosen-sprite%402x.png" />
     <Content Include="Content\chosen-sprite.png" />
     <Content Include="Content\chosen.css" />
@@ -237,6 +253,62 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\themes\classic\compiled\buttons.css" />
+    <Content Include="Content\themes\classic\compiled\dialogs.css" />
+    <Content Include="Content\themes\classic\compiled\errorPage.css" />
+    <Content Include="Content\themes\classic\compiled\general.css" />
+    <Content Include="Content\themes\classic\compiled\generator.css" />
+    <Content Include="Content\themes\classic\compiled\install.css" />
+    <Content Include="Content\themes\classic\compiled\layout.css" />
+    <Content Include="Content\themes\classic\compiled\login.css" />
+    <Content Include="Content\themes\classic\compiled\misc.css" />
+    <Content Include="Content\themes\classic\compiled\notifications.css" />
+    <Content Include="Content\themes\classic\compiled\settings.css" />
+    <Content Include="Content\themes\classic\compiled\styles.css" />
+    <Content Include="Content\themes\classic\images\bug.png" />
+    <Content Include="Content\themes\classic\images\calendarIcon.gif" />
+    <Content Include="Content\themes\classic\images\delete.png" />
+    <Content Include="Content\themes\classic\images\edit.png" />
+    <Content Include="Content\themes\classic\images\error.gif" />
+    <Content Include="Content\themes\classic\images\githubRibbon.png" />
+    <Content Include="Content\themes\classic\images\help.png" />
+    <Content Include="Content\themes\classic\images\helpSmall.png" />
+    <Content Include="Content\themes\classic\images\index.html" />
+    <Content Include="Content\themes\classic\images\info.png" />
+    <Content Include="Content\themes\classic\images\link.png" />
+    <Content Include="Content\themes\classic\images\load.png" />
+    <Content Include="Content\themes\classic\images\logo.png" />
+    <Content Include="Content\themes\classic\images\logoSmall.png" />
+    <Content Include="Content\themes\classic\images\refresh.png" />
+    <Content Include="Content\themes\classic\images\save.png" />
+    <Content Include="Content\themes\classic\images\siteHeader.jpg" />
+    <Content Include="Content\themes\classic\images\stop.png" />
+    <Content Include="Content\themes\classic\images\topBackground.jpg" />
+    <Content Include="Content\themes\classic\images\trash.png" />
+    <Content Include="Content\themes\classic\images\trash2.png" />
+    <Content Include="Content\themes\classic\images\upDown.png" />
+    <Content Include="Content\themes\classic\images\user.png" />
+    <Content Include="Content\themes\classic\images\warning.png" />
+    <Content Include="Content\themes\default\compiled\buttons.css" />
+    <Content Include="Content\themes\default\compiled\errorPage.css" />
+    <Content Include="Content\themes\default\compiled\general.css" />
+    <Content Include="Content\themes\default\compiled\generator.css" />
+    <Content Include="Content\themes\default\compiled\install.css" />
+    <Content Include="Content\themes\default\compiled\layout.css" />
+    <Content Include="Content\themes\default\compiled\misc.css" />
+    <Content Include="Content\themes\default\compiled\notifications.css" />
+    <Content Include="Content\themes\default\compiled\styles.css" />
+    <Content Include="Content\themes\default\images\alert.jpg" />
+    <Content Include="Content\themes\default\images\calendar_icon.gif" />
+    <Content Include="Content\themes\default\images\document_save.png" />
+    <Content Include="Content\themes\default\images\error.gif" />
+    <Content Include="Content\themes\default\images\index.html" />
+    <Content Include="Content\themes\default\images\info.png" />
+    <Content Include="Content\themes\default\images\loading.gif" />
+    <Content Include="Content\themes\default\images\siteHeader.jpg" />
+    <Content Include="Content\themes\default\images\stop.png" />
+    <Content Include="Content\themes\default\images\topBackground.jpg" />
+    <Content Include="Content\themes\default\images\upDown.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -378,6 +450,30 @@
     <Content Include="Scripts\CodeMirror\mode\livescript\index.html" />
     <Content Include="Scripts\CodeMirror\mode\livescript\livescript.js" />
     <Content Include="Scripts\CodeMirror\mode\livescript\livescript.ls" />
+    <Content Include="Content\themes\classic\sass\buttons.scss" />
+    <Content Include="Content\themes\classic\sass\dialogs.scss" />
+    <Content Include="Content\themes\classic\sass\errorPage.scss" />
+    <Content Include="Content\themes\classic\sass\general.scss" />
+    <Content Include="Content\themes\classic\sass\generator.scss" />
+    <Content Include="Content\themes\classic\sass\install.scss" />
+    <Content Include="Content\themes\classic\sass\layout.scss" />
+    <Content Include="Content\themes\classic\sass\login.scss" />
+    <Content Include="Content\themes\classic\sass\misc.scss" />
+    <Content Include="Content\themes\classic\sass\notifications.scss" />
+    <Content Include="Content\themes\classic\sass\settings.scss" />
+    <Content Include="Content\themes\classic\sass\styles.scss" />
+    <Content Include="Content\themes\default\sass\buttons.scss" />
+    <Content Include="Content\themes\default\sass\errorPage.scss" />
+    <Content Include="Content\themes\default\sass\general.scss" />
+    <Content Include="Content\themes\default\sass\generator.scss" />
+    <Content Include="Content\themes\default\sass\install.scss" />
+    <Content Include="Content\themes\default\sass\layout.scss" />
+    <Content Include="Content\themes\default\sass\misc.scss" />
+    <Content Include="Content\themes\default\sass\notifications.scss" />
+    <Content Include="Content\themes\default\sass\styles.scss" />
+    <Content Include="Content\themes\classic\sass\misc.css.map">
+      <DependentUpon>misc.css</DependentUpon>
+    </Content>
     <None Include="Scripts\libs\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\CodeMirror\mode\lua\index.html" />
     <Content Include="Scripts\CodeMirror\mode\lua\lua.js" />
@@ -502,6 +598,8 @@
     <Content Include="Scripts\CodeMirror\theme\vibrant-ink.css" />
     <Content Include="Scripts\CodeMirror\theme\xq-dark.css" />
     <Content Include="Scripts\CodeMirror\theme\xq-light.css" />
+    <Content Include="Scripts\generator.js" />
+    <Content Include="Scripts\install.js" />
     <Content Include="Scripts\libs\chosen.jquery.js" />
     <Content Include="Scripts\libs\chosen.jquery.min.js" />
     <Content Include="Scripts\libs\excanvas.js" />
@@ -524,6 +622,13 @@
     <Content Include="Scripts\libs\require.js" />
     <Content Include="Scripts\libs\rsv.js" />
     <Content Include="Scripts\libs\spinners.js" />
+    <Content Include="Scripts\login.js" />
+    <Content Include="Scripts\manager.js" />
+    <Content Include="Scripts\pageInit.js" />
+    <Content Include="Scripts\pluginManager.js" />
+    <Content Include="Scripts\queue.js" />
+    <Content Include="Scripts\requireConfig.js" />
+    <Content Include="Scripts\utils.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -542,42 +647,63 @@
     <Content Include="Views\Install\Index.cshtml" />
     <Content Include="Views\Install\Tab1.cshtml" />
     <Content Include="Views\Install\Tab2.cshtml" />
+    <Content Include="Views\Home\tab4.cshtml" />
+    <Content Include="Views\Home\tab3.cshtml" />
+    <Content Include="Views\Home\tab2.cshtml" />
+    <Content Include="Views\Home\tab1.cshtml" />
+    <Content Include="Views\Home\dialogs.cshtml" />
+    <Content Include="Views\Shared\_layout.cshtml" />
+    <Content Include="Views\Home\Constants.cshtml" />
+    <Content Include="Views\Home\Languages.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Scripts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\tmp.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>tmp.Designer.cs</LastGenOutput>
+      <LastGenOutput>tmp1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Home\HomeStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>HomeStrings.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>ViewRes</CustomToolNamespace>
+      <CustomToolNamespace>GenerateData.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Install\InstallStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>InstallStrings.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>ViewRes</CustomToolNamespace>
+      <CustomToolNamespace>GenerateData.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Login\LoginStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>LoginStrings.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>ViewRes</CustomToolNamespace>
+      <CustomToolNamespace>GenerateData.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Shared\FooterStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>FooterStrings.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>ViewRes</CustomToolNamespace>
+      <CustomToolNamespace>GenerateData.Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Shared\SharedStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SharedStrings.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>ViewRes</CustomToolNamespace>
+      <CustomToolNamespace>GenerateData.Resources</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{031a0564-a899-46d3-b8ac-356dffb92219}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

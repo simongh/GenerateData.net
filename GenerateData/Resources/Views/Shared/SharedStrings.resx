@@ -120,8 +120,32 @@
   <data name="ContinueRightArrow" xml:space="preserve">
     <value>Continue &amp;raquo;</value>
   </data>
+  <data name="Countries" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="DataTypes" xml:space="preserve">
+    <value>Data Types</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
+  </data>
+  <data name="EnterEmailAddressToResetPassword" xml:space="preserve">
+    <value>Enter your email address below to reset your password.</value>
+  </data>
+  <data name="ExportTypes" xml:space="preserve">
+    <value>Export Types</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ForgottenYourPasswordQ" xml:space="preserve">
+    <value>Forgotten your password?</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
@@ -135,13 +159,25 @@
   <data name="MetaKeywords" xml:space="preserve">
     <value>Random Data, Test Data, Sample Data, data generator, generate data</value>
   </data>
+  <data name="MultipleAccounts" xml:space="preserve">
+    <value>Multiple accounts</value>
+  </data>
   <data name="NoJs" xml:space="preserve">
     <value>Please enable javascript in your browser.</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="Plugins" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="SingleUserAccountRequiresLogin" xml:space="preserve">
+    <value>Single user account, requires login</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>generatedata.com</value>
+  </data>
+  <data name="UserAccounts" xml:space="preserve">
+    <value>User Accounts</value>
   </data>
 </root>

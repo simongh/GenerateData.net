@@ -1,0 +1,238 @@
+﻿<div id="gdEmptyFormDialog"></div>
+
+<div id="gdMainDialog" class="hidden">
+	<div id="gdMainDialogTabs" class="gdModalTabs gdThreeCols">
+		<ul>
+			<li id="gdMainDialogTab1" class="gdSelected">@HomeStrings.YourAccount</li>
+			<li id="gdMainDialogTab2">@HomeStrings.YourDataSets</li>
+			<li id="gdMainDialogTab3">@SharedStrings.DataTypes</li>
+		</ul>
+	</div>
+
+	<div id="gdMainDialogContent">
+		<div id="gdMainDialogTab1Content">
+			<div style="display:none" class="gdMessage gdNotify gdMarginTop" id="gdMainDialogTab1Message">
+				<a class="gdMessageClose" href="#">X</a>
+				<p>@HomeStrings.AccountUpdated</p>
+			</div>
+
+			<div style="float:left; width: 400px">
+				<h2>@HomeStrings.AccountInfo</h2>
+				<form>
+					<table cellpadding="0" cellspacing="1">
+						<tr>
+							<td width="160"><label for="gdUserAccount_firstName">@SharedStrings.FirstName</label></td>
+							<td><input type="text" id="gdUserAccount_firstName" class="medium" /></td>
+						</tr>
+						<tr>
+							<td><label for="gdUserAccount_lastName">@SharedStrings.LastName</label></td>
+							<td><input type="text" id="gdUserAccount_lastName" class="medium" /></td>
+						</tr>
+						<tr>
+							<td><label for="gdUserAccount_email">@SharedStrings.Email</label></td>
+							<td><input type="text" id="gdUserAccount_email" class="medium" /></td>
+						</tr>
+						<tr>
+							<td colspan="2" class="mediumGrey">
+								<br />
+								<i>@HomeStrings.PasswordChangeNote</i>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="gdUserAccount_password">@SharedStrings.Password</label></td>
+							<td>
+								<input type="password" id="gdUserAccount_password" value="" />
+							</td>
+						</tr>
+						<tr>
+							<td><label for="gdUserAccount_password2">@HomeStrings.ReenterPassword</label></td>
+							<td>
+								<input type="password" id="gdUserAccount_password2" value="" />
+							</td>
+						</tr>
+					</table>
+					<p>
+						<button class="gdPrimaryButton" id="gdUpdateAccountInfo">@HomeStrings.UpdateAccount</button>
+					</p>
+				</form>
+			</div>
+
+			<div style="float:left; width: 300px">
+				<h2>@HomeStrings.InfoAndStats</h2>
+
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="top" width="180">@HomeStrings.AccountType</td>
+						<td id="gdAccount_AccountType"></td>
+					</tr>
+					<tr>
+						<td>@HomeStrings.NumSavedDataSets</td>
+						<td id="gdAccount_NumSavedDataSets"></td>
+					</tr>
+					<tr>
+						<td>@HomeStrings.TotalRowsGenerated</td>
+						<td id="gdAccount_TotalRowsGenerated"></td>
+					</tr>
+					<tr>
+						<td>@HomeStrings.DateAccountCreated</td>
+						<td id="gdAccount_DateAccountCreated"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="gdMainDialogTab2Content" class="hidden">
+			<p id="gdNoAccountDataSets" class="hidden">@HomeStrings.NoSavedDataSets</p>
+			<table width="100%" cellpadding="0" cellspacing="1" id="gdAccountDataSets" class="highlightTableRows">
+				<thead>
+					<tr>
+						<th class="leftAligned">@HomeStrings.DataSetName</th>
+						<th class="leftAligned">@HomeStrings.DataCreated</th>
+						<th class="leftAligned">@HomeStrings.LastModified</th>
+						<th align="center">@HomeStrings.PublicQ</th>
+						<th align="center">@HomeStrings.RowsGenerated</th>
+						<th width="60" align="center">@HomeStrings.Load</th>
+						<th width="24" align="center" class="gdDataSetCheckRowCell"><input type="checkbox" id="gdSelectAllDataSets" /></th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+		<div id="gdMainDialogTab3Content" class="hidden">
+			<div id="gdDataSetHelpNav">
+				@*{data_types_list}*@
+			</div>
+			<div id="gdDataSetHelpContent">
+				<h3 id="gdFocusedDataTypeHeader"></h3>
+				@*{data_type_help}*@
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="gdLinkToDataSetDialog" class="hidden">
+	<div id="gdLinkToDataSet_incomplete">
+		<p>
+			@HomeStrings.SaveDataSetToLink
+		</p>
+	</div>
+	<div id="gdLinkToDataSet_complete">
+		<p>
+			<input type="checkbox" id="gdDataSetPublic" />
+			<label for="gdDataSetPublic">@HomeStrings.MakeDataSetPublicAgreement</label>
+		</p>
+		<input type="input" id="gdLinkURL" readonly="true" />
+	</div>
+</div>
+
+
+<div id="gdManageAccountDialog" class="hidden">
+	<div style="display:none" class="gdMessage gdNotify gdMarginTop gdMarginBottom" id="gdManageAccountDialogMessage">
+		<a class="gdMessageClose" href="#">X</a>
+		<div></div>
+	</div>
+
+	<table>
+		<tr>
+			<td width="160">@SharedStrings.FirstName</td>
+			<td><input type="text" id="gdManageAccount_firstName" class="medium" /></td>
+		</tr>
+		<tr>
+			<td>@SharedStrings.LastName</td>
+			<td><input type="text" id="gdManageAccount_lastName" class="medium" /></td>
+		</tr>
+		<tr>
+			<td>@SharedStrings.Email</td>
+			<td><input type="text" id="gdManageAccount_email" class="medium" /></td>
+		</tr>
+		<tr>
+			<td>@SharedStrings.Password</td>
+			<td>
+				<div id="gdManageAccount_pwdCreate">
+					<input type="text" id="gdManageAccount_password" value="" />
+					<span id="gdRefreshPassword"></span>
+				</div>
+				<div id="gdManageAccount_pwdEdit">********</div>
+			</td>
+		</tr>
+	</table>
+
+	<p id="gdManageAccountDialogEmailRow">
+		<input type="checkbox" id="gdAutoEmailAccountDetails" checked="checked" />
+		<label for="gdAutoEmailAccountDetails">@HomeStrings.EmailUserLoginInfo</label>
+	</p>
+</div>
+
+<div id="gdDeleteAccountDialog" class="hidden">
+	<div class="gdIconWarning"></div>
+	<div>
+		<p>
+			@HomeStrings.ConfirmDeleteUserAccount
+		</p>
+		<table>
+			<tr>
+				<th width="120">@SharedStrings.FirstName</th>
+				<td id="gdDeleteAccount_firstName"></td>
+			</tr>
+			<tr>
+				<th>@SharedStrings.LastName</th>
+				<td id="gdDeleteAccount_lastName"></td>
+			</tr>
+			<tr>
+				<th>@SharedStrings.Email</th>
+				<td id="gdDeleteAccount_email"></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div id="gdLoginDialog" class="hidden">
+	<div id="gdLoginDialogTabs" class="gdModalTabs gdTwoCols">
+		<ul>
+			<li id="gdLoginDialogTab1" class="gdSelected">@SharedStrings.Login</li>
+			<li id="gdLoginDialogTab2">@SharedStrings.ForgottenYourPasswordQ</li>
+		</ul>
+	</div>
+	<div id="gdLoginDialogContent">
+		<div id="gdLoginDialogTab1Content">
+			<div class="gdMessage gdErrors" id="gdLoginError">
+				<a class="gdMessageClose" href="#">X</a>
+				<div></div>
+			</div>
+			<div style="padding: 6px 10px;">
+				<form>
+					<table>
+						<tr>
+							<th width="120">@SharedStrings.Email</th>
+							<td><input type="text" name="gdLogin_email" id="gdLogin_email" /></td>
+						</tr>
+						<tr>
+							<th>@SharedStrings.Password</th>
+							<td><input type="password" name="gdLogin_password" id="gdLogin_password" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="gdLoginDialogTab2Content" class="hidden">
+			<div class="gdMessage gdErrors" id="gdResetPasswordMessage">
+				<a class="gdMessageClose" href="#">X</a>
+				<div></div>
+			</div>
+			<div style="padding: 6px 10px;">
+				<div style="padding-bottom: 2px">
+					@SharedStrings.EnterEmailAddressToResetPassword
+				</div>
+				<form>
+					<table>
+						<tr>
+							<th width="120">@SharedStrings.Email</th>
+							<td><input type="text" name="gdEmailReminder" id="gdEmailReminder" style="width: 200px" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

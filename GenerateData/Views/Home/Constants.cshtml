@@ -1,0 +1,96 @@
+﻿@model GenerateData.ViewModels.Constants
+@{
+	Layout = null;
+}
+
+/**
+ * Constants used by the client-side code.
+ */
+define([], function() {
+
+	var CONSTANTS = {
+
+		/**
+		 * Contains various options for debugging.
+		 */
+		DEBUGGING: @Html.Raw(Model.DebuggingToJson()),
+
+		SETTINGS: {
+			ANON_USER_PERMISSION_DENIED_MSG: @Model.AnonDeniedMsgToJson()
+		},
+
+		/**
+		 * List of component types.
+		 */
+		COMPONENT: {
+			DATA_TYPE: 'data-type',
+			EXPORT_TYPE: 'export-type',
+			CORE: 'core'
+		},
+
+		EXPORT_TYPE_SETTINGS_BLIND_SPEED: 500,
+
+		GENERATE_IN_PAGE_BATCH_SIZE: 100,
+
+		MAX_GENERATED_ROWS: @Model.MaxGeneratedRows,
+
+		DEMO_MODE: @Model.IsDemoMode.ToString().ToLower(),
+
+		THEME: @Model.ThemeToJson(),
+
+		/**
+		 * Contains all Core events.
+		 */
+		EVENT: {
+			APP_START: 'app-start',
+			RESULT_TYPE: {
+				CHANGE: "event-result-type-change"
+			},
+			COUNTRIES: {
+				CHANGE: "event-countries-change"
+			},
+			DATA_TYPE: {
+				CHANGE: "event-data-type-change"
+			},
+			DATA_TABLE: {
+				ONLOAD_READY: "event-data-table-onload-ready",
+				ROW: {
+					CHECK_TO_DELETE: "event-data-table-check-row-to-delete",
+					UNCHECK_TO_DELETE: "event-data-table-uncheck-row-to-delete",
+					TYPE_CHANGE: 'event-data-table-row-type-change',
+					EXAMPLE_CHANGE: 'event-data-table-row-example-change',
+					DELETE: "event-data-table-row-delete",
+					ADD: "event-data-table-row-add",
+					RE_SORT: "event-data-table-row-sort",
+					HELP_DIALOG_OPEN: "event-data-table-help-dialog-open",
+					HELP_DIALOG_CLOSE: "event-data-table-help-dialog-close"
+				},
+				CLEAR: "event-data-table-clear"
+			},
+			GENERATE: "event-generate",
+			IO: {
+				SAVE: "event-io-save",
+				LOAD: "event-io-load"
+			},
+			TAB: {
+				CHANGE: "event-tab-change"
+			},
+			MODULE: {
+				REGISTER: "event-module-register",
+				UNREGISTER: "event-module-unregister"
+			},
+			ACCOUNT: {
+				LOGGED_IN: "event-account-logged-in",
+				AVAILABLE: "event-account-available"
+			}
+		},
+
+		ERROR_CODES: {
+			ACCOUNT_ALREADY_EXISTS: @ErrorCodes.AccountAlreadyExists,
+			NOT_LOGGED_IN: @ErrorCodes.NotLoggedIn,
+			NON_ADMIN: @ErrorCodes.NonAdmin
+		}
+	}
+
+	return CONSTANTS;
+});

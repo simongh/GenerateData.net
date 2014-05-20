@@ -138,9 +138,6 @@
   <data name="ConfirmFileExists" xml:space="preserve">
     <value>Confirm File Exists</value>
   </data>
-  <data name="Countries" xml:space="preserve">
-    <value>Countries</value>
-  </data>
   <data name="CreateFileRightarrow" xml:space="preserve">
     <value>Create File &amp;raquo;</value>
   </data>
@@ -150,26 +147,14 @@
   <data name="DatabaseName" xml:space="preserve">
     <value>Database Name</value>
   </data>
-  <data name="DataTypes" xml:space="preserve">
-    <value>Data Types</value>
-  </data>
   <data name="DefaultLanguage" xml:space="preserve">
     <value>Default Language</value>
-  </data>
-  <data name="ExportTypes" xml:space="preserve">
-    <value>Export Types</value>
   </data>
   <data name="FeatureEnabled" xml:space="preserve">
     <value>Enabled</value>
   </data>
-  <data name="FirstName" xml:space="preserve">
-    <value>First Name</value>
-  </data>
   <data name="GotoScriptRightarrow" xml:space="preserve">
     <value>Go to script &amp;raquo;</value>
-  </data>
-  <data name="Help" xml:space="preserve">
-    <value>Help</value>
   </data>
   <data name="Hostname" xml:space="preserve">
     <value>Host Name</value>
@@ -201,32 +186,17 @@
   <data name="InstallPluginsRightarrow" xml:space="preserve">
     <value>Install Plugins &amp;raquo;</value>
   </data>
-  <data name="LastName" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
-  <data name="MultipleAccounts" xml:space="preserve">
-    <value>Multiple accounts</value>
-  </data>
   <data name="MysqlPassword" xml:space="preserve">
     <value>MySQL Password</value>
   </data>
   <data name="MysqlUsername" xml:space="preserve">
     <value>MySQL Username</value>
   </data>
-  <data name="Plugins" xml:space="preserve">
-    <value>Plugins</value>
-  </data>
   <data name="SingleAnonymousUserAccount" xml:space="preserve">
     <value>Single, anonymous user account</value>
   </data>
-  <data name="SingleUserAccountRequiresLogin" xml:space="preserve">
-    <value>Single user account, requires login</value>
-  </data>
   <data name="TablePrefix" xml:space="preserve">
     <value>Table Prefix</value>
-  </data>
-  <data name="UserAccounts" xml:space="preserve">
-    <value>User Accounts</value>
   </data>
   <data name="HelpIntro" xml:space="preserve">
     <value>The installation script does two things for you. One, it automatically generates a &lt;b&gt;settings.php&lt;/b&gt; file which contains your unique database connection info, so that it knows how to connect to the database whenever you visit the script. Two, it populates the database with various information that it needs: things like general settings, user accounts and raw data like people's names, country and city names.</value>

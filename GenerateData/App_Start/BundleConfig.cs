@@ -10,7 +10,7 @@ namespace GenerateData
 			bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
 						"~/Scripts/jquery-{version}.js"));
 
-			bundles.Add(new ScriptBundle("/bundles/codemirror").Include(
+			bundles.Add(new ScriptBundle("~/bundles/codemirror").Include(
 				"~/scripts/codemirror/codemirror.js"));
 
 			bundles.Add(new ScriptBundle("~/bundles/shared").Include(
@@ -30,10 +30,10 @@ namespace GenerateData
 				"~/content/chosen.css",
 				"~/content/tablesorter.theme.css"));
 
-			bundles.Add(new StyleBundle("~/content/smoothness/").Include(
-				"~/content/smoothness/jquery-ui-min.css"));
+			bundles.Add(new StyleBundle("~/content/smoothness").Include(
+				"~/content/smoothness/jquery-ui.min.css"));
 
-			bundles.Add(new StyleBundle("/script/codemirror/lib").Include(
+			bundles.Add(new StyleBundle("~/script/codemirror/lib").Include(
 				"~/scripts/codemirror/lib/codemirror.css"));
 
 			bundles.Add(new StyleBundle("~/content/themes/classic/compiled").Include(

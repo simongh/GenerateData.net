@@ -1,8 +1,9 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 
 namespace GenerateData.Data
 {
-	public interface IContext
+	public interface IContext : IDisposable
 	{
 		IDbSet<City> Cities { get; set; }
 		IDbSet<Configuration> Configurations { get; set; }
